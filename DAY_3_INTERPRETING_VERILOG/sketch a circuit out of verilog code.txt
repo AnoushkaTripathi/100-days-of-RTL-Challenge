@@ -1,0 +1,18 @@
+module foo (CE, X, CLK, RST, OUT);
+input CE, CLK, X, RST;
+output OUT;
+reg [3:0] Q1;
+reg [3:0] Q2;
+assign OUT = ^Q1;
+always @ (posedge CLK)
+if (RST) begin
+Q1 <= 4'h5;
+Q2 <= 0;
+end
+else
+if (CE) begin
+if (X) Q2 <= Q1<<1;
+else Q2 <= Q1;
+Q1 <= Q2;
+end
+endmodule 
