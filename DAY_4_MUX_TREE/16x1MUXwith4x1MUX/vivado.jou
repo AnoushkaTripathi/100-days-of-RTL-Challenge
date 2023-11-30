@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 30 08:50:53 2023
+# Process ID: 8140
+# Current directory: C:/Users/HP/Desktop/100daysofrt/DAY_4_MUX_TREE/16x1MUXwith4x1MUX
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent888 C:\Users\HP\Desktop\100daysofrt\DAY_4_MUX_TREE\16x1MUXwith4x1MUX\16x1MUXwith4x1MUX.xpr
+# Log file: C:/Users/HP/Desktop/100daysofrt/DAY_4_MUX_TREE/16x1MUXwith4x1MUX/vivado.log
+# Journal file: C:/Users/HP/Desktop/100daysofrt/DAY_4_MUX_TREE/16x1MUXwith4x1MUX\vivado.jou
+# Running On: DESKTOP-NP5PIKG, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 2, Host memory: 8496 MB
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/HP/Desktop/100daysofrt/DAY_4_MUX_TREE/16x1MUXwith4x1MUX/16x1MUXwith4x1MUX.xpr
+
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source mux_16_1_using_4_1_TB.tcl
+close_sim
+launch_simulation
+source mux_16_1_using_4_1_TB.tcl
+close_sim
+launch_simulation
+source mux_16_1_using_4_1_TB.tcl
+run 10 ps
+close_sim
+launch_simulation
+source mux_16_1_using_4_1_TB.tcl
+close_sim
+launch_simulation
+source mux_16_1_using_4_1_TB.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
